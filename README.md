@@ -205,9 +205,7 @@ After working through the notebook, you should understand:
 - how to collect an interactive prediction from a user
 - why a perfect score on a toy dataset is not enough evidence of generalization
 
-## License
 
-No license file is currently included. Confirm permissions before redistributing the notebook, datasets, or derivative work.
 
 <div align="center">
 
