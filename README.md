@@ -1,217 +1,216 @@
-# KNN 30 Practical Sample
+<div align="center">
 
-<p align="center">
-  <img src="assets/knn-banner.svg" alt="KNN practical sample banner" width="1000" />
-</p>
+# KNN / 30 Practical Samples
 
-<p align="center">
-  <a href="https://github.com/sgsinghashka-del/-KNN-30-Practical-Sample"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python 3.10+" /></a>
-  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-1.3+-F7931E?logo=scikit-learn&logoColor=white" alt="scikit-learn" /></a>
-  <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter Notebook" /></a>
-  <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/Matplotlib-3.8+-11557C?logo=matplotlib&logoColor=white" alt="Matplotlib" /></a>
-</p>
+### A dark, portfolio-grade machine learning notebook for learning classification through real-world-inspired mini-projects.
 
-A compact, hands-on learning project that demonstrates the power of the K-Nearest Neighbors (KNN) algorithm across 9 practical classification use cases. The notebook is designed for beginners and learners who want to see KNN in action with both code and visual interpretation.
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook-FF6F00?style=for-the-badge&logo=jupyter&logoColor=white)](KNN_30_Practical_Sample_IPYNB.ipynb)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-KNN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Notebook](https://img.shields.io/badge/Format-Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Landing Page](https://img.shields.io/badge/Portfolio-Landing_Page-8B5CF6?style=for-the-badge&logo=html5&logoColor=white)](docs/index.html)
 
-## Overview
+</div>
 
-This repository contains a single Jupyter notebook, `KNN_30_Practical_Sample_IPYNB.ipynb`, which walks through a series of beginner-friendly classification problems. Each section follows a standard machine learning flow:
+> **Portfolio note:** This is an educational KNN collection built around small, synthetic CSV datasets. It is excellent for learning the end-to-end workflow, but its perfect-looking scores should not be interpreted as production model performance.
 
-- Load small dataset
-- Select features and target
-- Split training and testing data
-- Scale features when needed
-- Train KNN classifier
-- Evaluate prediction accuracy
-- Accept user input and predict class
-- Visualize the result using charts
+<div align="center">
 
-The project uses `sklearn.neighbors.KNeighborsClassifier` with `n_neighbors=3`, a straightforward configuration that makes the examples easy to understand.
+**9 use cases** · **1 notebook** · **KNN classification** · **interactive predictions** · **visual outputs**
 
-## Why this project matters
+</div>
 
-KNN is one of the simplest and most intuitive machine learning algorithms:
+---
 
-- It does not assume a linear decision boundary
-- It works well for small, tabular datasets
-- It is easy to explain and visualize
-- It is a strong first model for classification learning
+## Executive summary
 
-This notebook turns theory into practice by applying KNN to real-world-inspired scenarios like finance, healthcare, marketing, education, and customer analytics.
+This repository presents a compact machine-learning portfolio project centered on **K-Nearest Neighbors (KNN)**. The notebook trains small classifiers, evaluates them, accepts custom user input, and renders a plot for each scenario.
 
-## Dataset coverage: 9 practical KNN use cases
+The strongest learning value is not the individual accuracy score—it is the repeated, recognizable pipeline:
 
-| # | Use Case | Features | Prediction Target |
-|---|---|---|---|
-| 1 | Salary Category Prediction | Experience, Salary | Low / Medium / High |
-| 2 | Employee Promotion Prediction | Experience, Performance | Yes / No |
-| 3 | Student Result Prediction | Study Hours, Attendance | Pass / Fail |
-| 4 | Loan Approval System | Income, Credit Score | Yes / No |
-| 5 | Credit Card Fraud Detection | Amount, Time | Fraud / Not Fraud |
-| 6 | Medical Diagnosis | Sugar, BP | Diabetes / No Diabetes |
-| 7 | Customer Churn Prediction | Years, Usage | Churn / Not Churn |
-| 8 | Email Spam Detection | Number of Links | Spam / Not Spam |
-| 9 | Movie Recommendation | Rating | Recommend / Not Recommend |
+```text
+CSV data → feature selection → train/test split → optional scaling
+        → KNN(k=3) → evaluation → interactive prediction → visualization
+```
 
-### Detailed analysis of each example
+The project includes examples from people analytics, education, finance, healthcare, security, customer analytics, email filtering, and recommendations.
 
-1. Salary Category Prediction
-   - Uses experience and salary to classify salary ranges.
-   - Helpful for understanding how KNN separates categories in a 2D feature space.
+## Explore the project
 
-2. Employee Promotion Prediction
-   - Combines years of experience and performance score.
-   - Illustrates how strategic decisions can be approximated through nearest-neighbor similarity.
+| Resource | Purpose |
+|---|---|
+| [Interactive notebook](KNN_30_Practical_Sample_IPYNB.ipynb) | Run and inspect all nine KNN examples |
+| [HTML/CSS portfolio landing page](docs/index.html) | View the project as a darker AI/ML showcase |
+| [Repository](https://github.com/sgsinghashka-del/-KNN-30-Practical-Sample) | Browse the complete source |
 
-3. Student Result Prediction
-   - Uses study hours and attendance.
-   - Demonstrates how educational indicators can support predictive outcomes.
+## What is inside?
 
-4. Loan Approval System
-   - Evaluates income and credit score.
-   - One of the clearest examples of classification used in financial systems.
+| # | Mini-project | Input features | Output |
+|---:|---|---|---|
+| 01 | Salary category | Experience, Salary | Low / Medium / High |
+| 02 | Employee promotion | Experience, Performance | Yes / No |
+| 03 | Student result | Study hours, Attendance | Pass / Fail |
+| 04 | Loan approval | Income, Credit score | Yes / No |
+| 05 | Credit-card fraud | Amount, Time | Yes / No |
+| 06 | Medical diagnosis | Sugar, BP | Yes / No |
+| 07 | Customer churn | Years, Usage | Yes / No |
+| 08 | Email spam | Number of links | Yes / No |
+| 09 | Movie recommendation | Rating | Recommend / Not recommend |
 
-5. Credit Card Fraud Detection
-   - Uses transaction amount and time.
-   - Shows how anomaly-like decisions can be framed as binary classification.
+## Technical anatomy
 
-6. Medical Diagnosis
-   - Predicts diabetes risk using sugar level and blood pressure.
-   - Highlights the importance of careful model validation in health applications.
+### Model
 
-7. Customer Churn Prediction
-   - Maps years of service and usage pattern to likely churn.
-   - Useful for customer retention analysis.
+Most examples use:
 
-8. Email Spam Detection
-   - Uses number of links as a feature.
-   - A simple, intuitive classification task that demonstrates lightweight feature engineering.
+```python
+from sklearn.neighbors import KNeighborsClassifier
 
-9. Movie Recommendation
-   - Uses movie rating to recommend or not recommend.
-   - Shows how even a single-feature KNN system can emulate simple recommendation logic.
+model = KNeighborsClassifier(n_neighbors=3)
+model.fit(X_train, y_train)
+prediction = model.predict(X_test)
+```
 
-## Tech stack
+### Evaluation
 
-- Python
-- Pandas
-- NumPy
-- scikit-learn
-- Matplotlib
-- Jupyter Notebook
+The notebook demonstrates several evaluation levels:
 
-## Machine learning workflow in the notebook
+- `accuracy_score` for quick model checks
+- `classification_report` for precision, recall, and F1-score
+- `confusion_matrix` for class-level error inspection
+- `predict_proba` in the employee-promotion example
+- interactive predictions from keyboard input
+- Matplotlib charts for visual interpretation
 
-<p align="center">
-  <img src="assets/knn-pipeline.svg" alt="KNN pipeline" width="900" />
-</p>
+### Scaling insight
 
-The notebook generally follows this process:
+Scaling is used in the examples where feature magnitudes differ substantially, such as income versus credit score or transaction amount versus time. This matters because KNN is distance-based: an unscaled large-number feature can dominate the neighborhood calculation.
 
-1. Import required libraries
-2. Load dataset from CSV
-3. Select feature columns and target column
-4. Split into training and testing sets
-5. Apply dataset scaling (`StandardScaler`) when necessary
-6. Train `KNeighborsClassifier(n_neighbors=3)`
-7. Predict against the test set
-8. Print accuracy, confusion matrix, and classification report
-9. Ask user for custom input and generate prediction
-10. Plot a chart to visualize the result
+## Portfolio critique and engineering observations
 
-## Typical output style
+### Strengths
 
-The notebook includes:
+- Clear beginner-friendly progression from data loading to prediction.
+- Repeated structure makes the KNN workflow easy to compare across domains.
+- Interactive inputs make every example feel tangible.
+- The notebook combines metrics, predictions, and visualizations.
+- The examples are small enough to run quickly in Colab or local Jupyter.
 
-- Accuracy score
-- Classification report
-- Confusion matrix
-- User prompt for input
-- Predicted class label
-- Graphical plots for data visualization
+### Current limitations
 
-<p align="center">
-  <img src="assets/knn-salary-preview.svg" alt="Salary prediction sample visualization" width="900" />
-</p>
+- The repository currently contains the notebook but not the CSV files referenced by it (`salary.csv`, `promotion.csv`, `student.csv`, and others). Add those datasets beside the notebook before running it locally.
+- Several examples use very small datasets and can report `1.0` accuracy with only a few test rows.
+- Some prediction calls pass raw lists to estimators fitted with DataFrame feature names, which produces scikit-learn feature-name warnings.
+- Most examples use a fixed `k=3` without comparing alternative values.
+- Some examples do not use stratification, feature scaling, or a full classification report consistently.
+- The medical, loan, fraud, and employment examples are demonstrations—not decision systems.
 
-## Notes on data and results
+## Recommended next iteration
 
-This project is intentionally educational and uses small synthetic datasets. As a result, metrics often show perfect accuracy (e.g., `1.0`) because the toy datasets are very simple and highly separable.
+To turn this learning notebook into a stronger portfolio project:
 
-This is a strength for learning, but it also means the notebook should be understood as a demonstration of KNN principles rather than a production-ready predictive system.
+1. Add the nine CSV datasets with a documented schema and data dictionary.
+2. Replace list-based prediction inputs with DataFrames using the original feature names.
+3. Add a reusable training function or scikit-learn `Pipeline`.
+4. Compare `k` values with cross-validation and plot validation accuracy.
+5. Add precision, recall, F1, and confusion matrices to every classifier.
+6. Track class balance and test a stratified split consistently.
+7. Add a `requirements.txt` and a reproducible environment file.
+8. Separate notebook demonstrations from production-style Python modules.
+9. Add responsible-AI notes for healthcare, credit, fraud, and employment scenarios.
 
-## How to run it
+## Run locally
 
-1. Clone the repository:
+### 1. Clone
 
 ```bash
 git clone https://github.com/sgsinghashka-del/-KNN-30-Practical-Sample.git
 cd -KNN-30-Practical-Sample
 ```
 
-2. Open the notebook in Jupyter:
+### 2. Install dependencies
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install pandas matplotlib scikit-learn jupyter
+```
+
+### 3. Add the referenced datasets
+
+Place the CSV files expected by the notebook in the repository root:
+
+```text
+salary.csv
+promotion.csv
+student.csv
+loan.csv
+fraud.csv
+diabetes.csv
+churn.csv
+spam.csv
+movies.csv
+```
+
+### 4. Launch
 
 ```bash
 jupyter notebook KNN_30_Practical_Sample_IPYNB.ipynb
 ```
 
-3. Run the cells in order.
+You can also open the notebook directly in [Google Colab](https://colab.research.google.com/github/sgsinghashka-del/-KNN-30-Practical-Sample/blob/main/KNN_30_Practical_Sample_IPYNB.ipynb).
 
-## Project structure
+## Repository structure
 
 ```text
 .
-├── KNN_30_Practical_Sample_IPYNB.ipynb
-├── assets/
-│   ├── knn-banner.svg
-│   ├── knn-pipeline.svg
-│   └── knn-salary-preview.svg
+├── KNN_30_Practical_Sample_IPYNB.ipynb  # Main interactive notebook
+├── docs/
+│   ├── index.html                        # Dark AI/ML portfolio landing page
+│   └── styles.css                        # Responsive visual system
+├── assets/                               # Earlier lightweight visual assets
 └── README.md
 ```
 
-## Screenshot gallery
+## Visual experience
 
-<p align="center">
-  <img src="assets/knn-banner.svg" alt="Project banner mockup" width="1000" />
-</p>
+The repository includes a dedicated HTML/CSS landing page with:
 
-<p align="center">
-  <img src="assets/knn-pipeline.svg" alt="KNN process flow" width="900" />
-</p>
+- dark hacker/tech visual language
+- neon cyan, violet, and green accents
+- responsive cards for all nine use cases
+- pipeline visualization without external frameworks
+- metric cards and model facts
+- direct notebook and repository calls to action
 
-<p align="center">
-  <img src="assets/knn-salary-preview.svg" alt="KNN salary prediction chart" width="900" />
-</p>
+Open it locally with:
 
-## Learning takeaway
+```bash
+python -m http.server 8000 --directory docs
+```
 
-This notebook is a great beginner-level introduction to:
+Then visit <http://localhost:8000>.
 
-- supervised classification
-- feature selection
-- data scaling
-- train/test split
-- prediction evaluation
-- visual interpretation of model behavior
+For GitHub Pages, configure **Settings → Pages → Deploy from a branch → `main` → `/docs`**.
 
-If you are learning machine learning, this project is a strong way to understand how a classic algorithm behaves across multiple everyday datasets.
+## Learning outcomes
 
-## Future improvements
+After working through the notebook, you should understand:
 
-Potential enhancements for the project could include:
-
-- adding a single consolidated dashboard
-- testing different values of `k`
-- comparing KNN with logistic regression and decision trees
-- adding cross-validation
-- saving trained models
-- converting notebook code into a Python script
+- what supervised classification looks like in practice
+- why feature scaling matters for distance-based algorithms
+- how train/test splits influence evaluation
+- how KNN uses neighboring observations to vote on a class
+- how to collect an interactive prediction from a user
+- why a perfect score on a toy dataset is not enough evidence of generalization
 
 ## License
 
-No explicit license file is included in the repository. Please check the repository for licensing status before reusing the project in public or commercial contexts.
+No license file is currently included. Confirm permissions before redistributing the notebook, datasets, or derivative work.
 
----
+<div align="center">
 
-Made with Python, scikit-learn, and a lot of learning curiosity.
+**Built for learning. Styled for a portfolio. Evaluated with healthy skepticism.**
 
+</div>
