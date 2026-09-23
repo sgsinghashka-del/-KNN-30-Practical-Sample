@@ -1,0 +1,67 @@
+<svg width="1400" height="780" viewBox="0 0 1400 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1400" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="line3" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="780" fill="url(#bg2)"/>
+
+  <g>
+    <rect x="90" y="80" width="1220" height="620" rx="28" fill="url(#card)" stroke="#CBD5E1"/>
+    <text x="120" y="150" fill="#0F172A" font-family="Arial, sans-serif" font-size="36" font-weight="800">KNN Classification Workflow</text>
+    <text x="120" y="190" fill="#475569" font-family="Arial, sans-serif" font-size="21">Predicting classes from nearest patterns</text>
+
+    <g>
+      <rect x="140" y="250" width="180" height="110" rx="18" fill="#EFF6FF" stroke="#93C5FD"/>
+      <text x="170" y="288" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">1. Load</text>
+      <text x="170" y="320" fill="#334155" font-family="Arial, sans-serif" font-size="18">CSV Data</text>
+    </g>
+
+    <g>
+      <rect x="380" y="250" width="180" height="110" rx="18" fill="#F5F3FF" stroke="#C4B5FD"/>
+      <text x="410" y="288" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">2. Train</text>
+      <text x="410" y="320" fill="#334155" font-family="Arial, sans-serif" font-size="18">KNN Model</text>
+    </g>
+
+    <g>
+      <rect x="620" y="250" width="180" height="110" rx="18" fill="#ECFDF5" stroke="#86EFAC"/>
+      <text x="650" y="288" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">3. Scale</text>
+      <text x="650" y="320" fill="#334155" font-family="Arial, sans-serif" font-size="18">StandardScaler</text>
+    </g>
+
+    <g>
+      <rect x="860" y="250" width="180" height="110" rx="18" fill="#FFF7ED" stroke="#FDBA74"/>
+      <text x="890" y="288" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">4. Test</text>
+      <text x="890" y="320" fill="#334155" font-family="Arial, sans-serif" font-size="18">Accuracy</text>
+    </g>
+
+    <g>
+      <rect x="1100" y="250" width="180" height="110" rx="18" fill="#FDF2F8" stroke="#F9A8D4"/>
+      <text x="1128" y="288" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">5. Predict</text>
+      <text x="1128" y="320" fill="#334155" font-family="Arial, sans-serif" font-size="18">User Input</text>
+    </g>
+
+    <path d="M320 305H380" stroke="url(#line3)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M560 305H620" stroke="url(#line3)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M800 305H860" stroke="url(#line3)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M1040 305H1100" stroke="url(#line3)" stroke-width="6" stroke-linecap="round"/>
+
+    <g>
+      <rect x="250" y="430" width="900" height="180" rx="22" fill="#0F172A"/>
+      <text x="290" y="485" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="26" font-weight="700">KNN Decision Rule</text>
+      <text x="290" y="530" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="21">“Classify a new sample based on the majority vote of its nearest neighbors.”</text>
+      <text x="290" y="570" fill="#94A3B8" font-family="Arial, sans-serif" font-size="19">Distance-based pattern matching in feature space</text>
+    </g>
+  </g>
+</svg>
+
